@@ -7,7 +7,7 @@ export function Navbar() {
   const menu = useMemo(() => ['Templates', 'Pricing', 'Blog', 'Jobs'], [])
 
   return (
-    <nav className="absolute flex w-full items-center justify-between px-11 py-12 font-bold text-white">
+    <nav className="absolute left-1/2 flex w-full max-w-[90rem] -translate-x-1/2 items-center justify-between px-11 py-12 font-bold text-white">
       <img src={logoImg} alt="Mind the Graph Logo" />
 
       <div className="flex items-center gap-10">
