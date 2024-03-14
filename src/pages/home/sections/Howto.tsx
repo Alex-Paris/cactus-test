@@ -46,9 +46,9 @@ export function HowTo() {
   )
 
   return (
-    <section>
-      <div className="rounded-3xl bg-purple-dark px-24 pb-16 pt-20 text-center text-white">
-        <p className="text-4xl font-bold">
+    <section className="px-4 md:px-20 lg:px-40">
+      <div className="rounded-3xl bg-purple-dark px-4 pb-10 pt-16 text-center text-white md:px-12 lg:px-24 lg:pb-16 lg:pt-20">
+        <p className="text-3xl font-bold lg:text-4xl">
           Create effective science figures in minutes
         </p>
         <p className="mt-14 text-xl leading-8">
@@ -58,12 +58,12 @@ export function HowTo() {
           and small labs to large organizations
         </p>
 
-        <div className="mt-24 grid grid-cols-3 gap-32">
+        <div className="mt-24 grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3 lg:gap-32">
           {items.map((item) => (
             <div key={item.title} className="flex flex-col items-center gap-3">
-              <img src={item.icon} alt="" height={84} />
-              <p className="text-2xl font-bold">{item.title}</p>
-              <p className="text-xl">{item.text}</p>
+              <img src={item.icon} alt="" className="h-16 lg:h-[84px]" />
+              <p className="text-xl font-bold lg:text-2xl">{item.title}</p>
+              <p className="text-lg lg:text-xl">{item.text}</p>
             </div>
           ))}
         </div>

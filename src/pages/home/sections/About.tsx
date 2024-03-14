@@ -29,17 +29,17 @@ export function About() {
 
   return (
     <section className="pt-24 text-center">
-      <p className="text-4xl font-bold text-purple">
+      <p className="text-xl font-bold text-purple md:text-4xl">
         Visualize what Mind the Graph can do for you
       </p>
 
-      <div className="mt-20 flex gap-20">
+      <div className="mt-8 flex flex-col gap-8 md:flex-row lg:mt-20 lg:gap-20">
         {cards.map((card) => (
           <article
             key={card.title}
-            className="group flex cursor-pointer flex-col items-center gap-3 rounded-lg py-4 text-xl transition-transform hover:-translate-y-1 hover:shadow-2xl"
+            className="group flex cursor-pointer flex-col items-center gap-3 rounded-lg py-2 text-lg transition-transform hover:-translate-y-1 hover:shadow-2xl lg:py-4 lg:text-xl"
           >
-            <img src={card.image} alt="" height={202} />
+            <img src={card.image} alt="" className="h-44 lg:h-52" />
             <p className="font-bold text-purple">
               Graphical Abstracts and Infographics
             </p>
