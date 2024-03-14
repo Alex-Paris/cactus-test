@@ -1,5 +1,11 @@
-import { Hero } from './Hero'
+import { About } from './sections/About'
+import { Hero } from './sections/Hero'
 
 export function Home() {
-  return <Hero />
+  return (
+    <>
+      <Hero />
+      <About />
+    </>
+  )
 }

@@ -19,10 +19,11 @@
     font-weight: 400;
   }
 
+  section {
+    @apply max-w-[90rem] mx-auto px-40 py-12
+  }
+
 }
 
 @layer components {
-  .section {
-    @apply max-w-[90rem] mx-auto px-28
-  }
 }
