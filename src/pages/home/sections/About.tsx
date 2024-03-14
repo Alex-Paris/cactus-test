@@ -39,7 +39,7 @@ export function About() {
             key={card.title}
             className="group flex cursor-pointer flex-col items-center gap-3 rounded-lg py-4 text-xl transition-transform hover:-translate-y-1 hover:shadow-2xl"
           >
-            <img src={card.image} alt="" width={214} />
+            <img src={card.image} alt="" height={202} />
             <p className="font-bold text-purple">
               Graphical Abstracts and Infographics
             </p>
